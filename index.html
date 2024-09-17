@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .shine-text {
+      text-shadow: 0px 1px 2px rgba(255, 215, 0, 0.8), 0px 2px 4px rgba(255, 165, 0, 0.7);
+    }
+    .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-in-2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+
+  .fade-in-2.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  </style>
+  <body>
+    <!-- First Section -->
+    <section class="bg-first-section h-screen bg-cover bg-center">
+      <div class="container px-4">
+        <div class="relative">
+          <h1
+            class="text-4xl text-center text-yellow-800 font-sacramento pt-14"
+          >
+            Barakallah <br />fii umrik istrikuuu
+          </h1>
+          <p
+            class="text-center text-sm text-slate-600 font-inter font-semibold pt-3"
+          >
+            -Fadilla Zulfia Sari-
+          </p>
+          <img src="img/stars.png" class="absolute top-14 right-0 w-14 animate-bounce" alt="Stars">
+        </div>
+        <div class="relative">
+          <img
+            src="img/dilla.png"
+            class="scale-110 -mt-8 relative z-10"
+            alt="Fadilla"
+          />
+          <img src="img/wings.png" class="absolute top-5 left-0 z-0" alt="Wings">
+          <img src="img/stars.png" class="absolute bottom-0 w-14 animate-bounce" alt="Stars">
+        </div>
+        <div>
+        <p
+          class="text-xs font-inter text-center text-amber-800 font-semibold pt-7 px-4 italic"
+        >
+          Semoga Allah selalu memberikan rahmat-nya disetiap perjalananmu.
+          Semoga diberi kesehatan, kesabaran, dan kelancaran atas semua urusan
+          sayang. Dan semoga bahagia selalu istriku Fadilla Zulfia Sari.
+        </p>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- Second Section -->
+     <section class="py-5 bg-gradient-to-r from-purple-900 to-red-900">
+      <h1 class="text-center text-3xl font-sacramento text-transparent bg-clip-text gradient-gold shine-text pb-3">Moments With You</h1>
+      <div class="relative w-full max-w-64 mx-auto overflow-hidden border-4 border-yellow-500 rounded-lg shadow-lg">
+        <!-- Slideshow Container -->
+        <div id="slideshow" class="flex transition-transform duration-700 ease-in-out">
+          <img src="img/d1.jpeg" alt="Photo 1" class="w-full h-auto object-cover">
+          <img src="img/d2.jpeg" alt="Photo 2" class="w-full h-auto object-cover">
+          <img src="img/d3.jpeg" alt="Photo 3" class="w-full h-auto object-cover">
+          <img src="img/d4.jpeg" alt="Photo 4" class="w-full h-auto object-cover">
+          <img src="img/d5.jpeg" alt="Photo 5" class="w-full h-auto object-cover">
+          <img src="img/d6.jpeg" alt="Photo 6" class="w-full h-auto object-cover">
+          <img src="img/d7.jpeg" alt="Photo 7" class="w-full h-auto object-cover">
+          <img src="img/d8.jpeg" alt="Photo 8" class="w-full h-auto object-cover">
+          <img src="img/d9.jpeg" alt="Photo 9" class="w-full h-auto object-cover">
+          <!-- Tambahkan lebih banyak gambar di sini -->
+        </div>
+      
+        <!-- Navigasi -->
+        <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1">‹</button>
+        <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1">›</button>
+      </div>
+      <p class="text-sm text-orange-400 text-justify font-inter py-3 px-4">Beberapa momen sama sayang selama sayang umur 23 menuju 24. Mulai dari sebelum menikah sampai akhirnya menikah. Mulai dari menikah sampai akhirnya hamil. Mulai dari hamil sampai akhirnya mau melahirkan.</p>
+     </section>
+    <!-- End Section -->
+    <!-- Third Section -->
+    <section id="doa-harapan" class="relative bg-gradient-to-r from-purple-500 to-pink-500 py-16 px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <!-- Judul -->
+        <h2 class="text-3xl font-sacramento font-bold text-white mb-6 fade-in">Doa dan Harapan</h2>
+    
+        <!-- Kotak Doa dan Harapan -->
+        <div class="relative bg-white p-8 rounded-lg shadow-lg fade-in-2">
+          <!-- Icon atas -->
+          <svg class="w-10 h-10 text-purple-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7 12h.01M5 15h.01M3 17h.01" />
+          </svg>
+    
+          <!-- Konten Doa dan Harapan -->
+          <blockquote class="text-xl italic font-semibold text-gray-800">
+            <p>"Semoga istriku selalu diberi kesehatan dan panjang umur. Dilindungi dimanapun, semoga diberi kesabaran lebih dalam menghadapi masalah. Semoga lahiran nanti semuanya lancar yaa istrikuu sama dede"</p>
+            <p class="text-pink-400">I Love U Sayang</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
